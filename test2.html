@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script>
+        $(function () {
+            // $("#toEnd").click(function () {
+            //     $.ajax({
+            //         url:"/register",
+            //         data:JSON.stringify(vm.data),
+            //         dataType:"text",
+            //         type:"post",
+            //         contentType:"application/json;charset-UTF-8",
+            //         success:function (text) {
+            //             alert(text);
+            //         }
+            //     })
+            // })
+
+            var vm=new Vue({
+                el:"#appp",
+                data:{
+                    user:1234567891,
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="appp">
+<div id="app">
+    {{user}}
+    <input v-model="user">
+</div>
+</div>
+</body>
+</html>
